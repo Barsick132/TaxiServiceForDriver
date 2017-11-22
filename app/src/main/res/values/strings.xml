@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Taxi Service For Driver</string>
+
+    //System
+    <string name="logo">LOGO</string>
+
+    //Main
+    <string name="phone">Телефон</string>
+    <string name="password">Пароль</string>
+    <string name="signIn">Войти</string>
+    <string name="registration">Регистрация</string>
+
+    //Registration
+    <string name="lastName">Фамилия</string>
+    <string name="firstName">Имя</string>
+    <string name="confirmPass">Повторите пароль</string>
+    <string name="toRegister">Зарегистрироваться</string>
+</resources>
