@@ -56,5 +56,7 @@ public class Navigator extends AppCompatActivity{
     }
 
     public void closeOrder(View view) {
+        Intent intent = new Intent(this, Global.class);
+        startActivity(intent);
     }
 }

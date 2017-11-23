@@ -35,4 +35,9 @@ public class Global extends AppCompatActivity {
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
+
+    public void testClickOrder(View view) {
+        Intent intent = new Intent(this, DetailOrder.class);
+        startActivity(intent);
+    }
 }

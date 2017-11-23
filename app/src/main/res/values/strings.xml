@@ -57,6 +57,7 @@
     <string name="startOrder">Начать выполнение</string>
     <string name="commentClient">Комментарий клиента</string>
     <string name="paymentMethod">Способ оплаты</string>
+    <string name="factTimeWaiting">Клиент ожидал</string>
 
     //Navigator
     <string name="annulment">Отменить заказ</string>
@@ -68,6 +69,7 @@
     <string name="factCostOrder">Фактическая цена заказа</string>
     <string name="factTravelTime">Время выполнения заказа</string>
     <string name="factDistance">Фактическое расстояние</string>
+    <string name="dateTimeStartOrder">Дата и время начала выполнения заказа</string>
 
     //Profile
     <string name="patronymic">Отчество</string>

@@ -114,7 +114,7 @@
                 android:textStyle="bold"
         />
         <TextView
-                android:text="8 мин."
+                android:text="9 мин."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="2dp"
@@ -130,7 +130,7 @@
                 android:textStyle="bold"
         />
         <TextView
-                android:text="2.5 км"
+                android:text="2.4 км"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="2dp"
@@ -138,7 +138,23 @@
                 android:paddingEnd="0dp"
                 android:id="@+id/textView36"/>
         <TextView
-                android:text="@string/timeWaiting"
+                android:text="@string/factTimeWaiting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:id="@+id/textView45"
+                android:textStyle="bold"
+        />
+        <TextView
+                android:text="1.5 мин."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
+                android:id="@+id/textView46"/>
+        <TextView
+                android:text="@string/dateTimeStartOrder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
@@ -146,7 +162,7 @@
                 android:textStyle="bold"
         />
         <TextView
-                android:text="3 мин."
+                android:text="23.11.2017 18:43:21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="2dp"
