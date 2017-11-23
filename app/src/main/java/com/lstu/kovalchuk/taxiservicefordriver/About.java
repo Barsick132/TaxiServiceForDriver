@@ -1,36 +1,31 @@
 package com.lstu.kovalchuk.taxiservicefordriver;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
-import android.view.View;
 import android.widget.TextView;
 
-public class Registration extends AppCompatActivity {
+public class About extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        setContentView(R.layout.activity_about);
 
-        TextView yandexMapsInfo = (TextView)findViewById(R.id.textView1);
+        TextView versionString = (TextView)findViewById(R.id.textView15);
+        versionString.setText(BuildConfig.VERSION_NAME);
+
+        TextView yandexMapsInfo = (TextView)findViewById(R.id.textView17);
         if (Build.VERSION.SDK_INT >= 24)
         {
-            yandexMapsInfo.setText(Html.fromHtml(getString(R.string.notAccountNumber), 1));
+            yandexMapsInfo.setText(Html.fromHtml(getString(R.string.termsOfUseYandexMapsInfo), 1));
         }
         else {
-            yandexMapsInfo.setText(Html.fromHtml(getString(R.string.notAccountNumber)));
+            yandexMapsInfo.setText(Html.fromHtml(getString(R.string.termsOfUseYandexMapsInfo)));
         }
 
         yandexMapsInfo.setMovementMethod(LinkMovementMethod.getInstance());
-    }
-
-
-    public void toRegister(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
     }
 }
