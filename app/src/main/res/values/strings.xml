@@ -27,6 +27,7 @@
     <string name="whence">Откуда:</string>
     <string name="where">Куда:</string>
     <string name="approximateCost">Цена поездки:</string>
+    <string name="activOrders">Доступные заказы</string>
 
     //Menu
     <string name="profile">Профиль</string>
