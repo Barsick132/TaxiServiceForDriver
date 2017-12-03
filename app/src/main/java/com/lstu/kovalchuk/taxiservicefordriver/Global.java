@@ -7,9 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Global extends AppCompatActivity {
 
     private android.support.v7.widget.Toolbar toolbar;
+    private List<Order> listOrders = new ArrayList<Order>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,8 +40,12 @@ public class Global extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void testClickOrder(View view) {
+    public void clickOrder(View view) {
         Intent intent = new Intent(this, DetailOrder.class);
         startActivity(intent);
+    }
+
+    private void updeteListOrders() {
+
     }
 }

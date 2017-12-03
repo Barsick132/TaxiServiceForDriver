@@ -59,4 +59,11 @@ public class Navigator extends AppCompatActivity{
         Intent intent = new Intent(this, Global.class);
         startActivity(intent);
     }
+
+    public void openPhoneKeyboard(View view) {
+    }
+
+    private void updateNavigator(){
+
+    }
 }
