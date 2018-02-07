@@ -12,21 +12,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Registration extends AppCompatActivity {
-    private EditText etPhone = (EditText)findViewById(R.id.regPhone);
-    private EditText etLastName = (EditText)findViewById(R.id.regFamily);
-    private EditText etFirstName = (EditText)findViewById(R.id.regName);
-    private EditText etBrandCar = (EditText)findViewById(R.id.regBrand);
-    private EditText etColorCar = (EditText)findViewById(R.id.regColor);
-    private EditText etNumberCar = (EditText)findViewById(R.id.regNumber1);
-    private EditText etAccountNumber = (EditText)findViewById(R.id.regAccountNumber);
-    private EditText etPassword = (EditText)findViewById(R.id.regPass1);
-    private EditText etConfirmPassword = (EditText)findViewById(R.id.regPass2);
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+
+        EditText etPhone = (EditText)findViewById(R.id.regPhone);
+        EditText etLastName = (EditText)findViewById(R.id.regFamily);
+        EditText etFirstName = (EditText)findViewById(R.id.regName);
+        EditText etBrandCar = (EditText)findViewById(R.id.regBrand);
+        EditText etColorCar = (EditText)findViewById(R.id.regColor);
+        EditText etNumberCar = (EditText)findViewById(R.id.regNumber1);
+        EditText etAccountNumber = (EditText)findViewById(R.id.regAccountNumber);
+        EditText etPassword = (EditText)findViewById(R.id.regPass1);
+        EditText etConfirmPassword = (EditText)findViewById(R.id.regPass2);
 
         TextView yandexMapsInfo = (TextView)findViewById(R.id.regLink);
         if (Build.VERSION.SDK_INT >= 24)
