@@ -12,7 +12,6 @@ import java.util.List;
 
 public class Global extends AppCompatActivity {
 
-    private android.support.v7.widget.Toolbar toolbar;
     private List<Order> listOrders = new ArrayList<Order>();
 
     @Override
@@ -24,7 +23,7 @@ public class Global extends AppCompatActivity {
     }
 
     private void initToolbar() {
-        toolbar = (android.support.v7.widget.Toolbar)findViewById(R.id.toolbar);
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.globalToolbar);
         toolbar.setOnMenuItemClickListener(new android.support.v7.widget.Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {

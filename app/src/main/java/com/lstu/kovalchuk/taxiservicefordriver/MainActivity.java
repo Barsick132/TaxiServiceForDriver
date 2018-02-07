@@ -10,13 +10,13 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText etPhone = (EditText)findViewById(R.id.editText);
-    private EditText etPassword = (EditText)findViewById(R.id.editText2);
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        EditText etPhone = (EditText) findViewById(R.id.mainPhone);
+        EditText etPassword = (EditText) findViewById(R.id.mainPassword);
 
     }
 

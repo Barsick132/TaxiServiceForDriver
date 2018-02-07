@@ -15,7 +15,7 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView24"
+            android:id="@+id/detailOrderHeder"
             android:background="@color/colorHeaderWindow"/>
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="0dp"
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView39"
+                android:id="@+id/detailOrderHeder1"
                 android:textStyle="bold"
         />
         <TextView
@@ -41,12 +41,12 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView40"/>
+                android:id="@+id/detailOrderText1"/>
         <TextView
                 android:text="@string/detailWhence"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView27"
+                android:id="@+id/detailOrderHeder2"
                 android:paddingTop="5dp"
                 android:textStyle="bold"
         />
@@ -57,13 +57,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView28"/>
+                android:id="@+id/detailOrderText2"/>
         <TextView
                 android:text="@string/detailWhere"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView29"
+                android:id="@+id/detailOrderHeder3"
                 android:textStyle="bold"
         />
         <TextView
@@ -73,13 +73,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView30"/>
+                android:id="@+id/detailOrderText3"/>
         <TextView
                 android:text="@string/approximateCost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView31"
+                android:id="@+id/detailOrderHeder4"
                 android:textStyle="bold"
         />
         <TextView
@@ -89,13 +89,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView32"/>
+                android:id="@+id/detailOrderText4"/>
         <TextView
                 android:text="@string/paymentMethod"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView43"
+                android:id="@+id/detailOrderHeder5"
                 android:textStyle="bold"
         />
         <TextView
@@ -105,13 +105,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView44"/>
+                android:id="@+id/detailOrderText5"/>
         <TextView
                 android:text="@string/commentClient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView45"
+                android:id="@+id/detailOrderHeder6"
                 android:textStyle="bold"
         />
         <TextView
@@ -121,13 +121,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView46"/>
+                android:id="@+id/detailOrderText6"/>
         <TextView
                 android:text="@string/approximateTravelTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView33"
+                android:id="@+id/detailOrderHeder7"
                 android:textStyle="bold"
         />
         <TextView
@@ -137,13 +137,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView34"/>
+                android:id="@+id/detailOrderText7"/>
         <TextView
                 android:text="@string/approximateDistance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView35"
+                android:id="@+id/detailOrderHeder8"
                 android:textStyle="bold"
         />
         <TextView
@@ -153,13 +153,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView36"/>
+                android:id="@+id/detailOrderText8"/>
         <TextView
                 android:text="@string/timeWaiting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView37"
+                android:id="@+id/detailOrderHeder9"
                 android:textStyle="bold"
         />
         <TextView
@@ -169,7 +169,7 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView38"/>
+                android:id="@+id/detailOrderText9"/>
     </LinearLayout>
     <Button android:text="@string/startOrder"
             android:layout_width="match_parent"

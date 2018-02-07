@@ -14,7 +14,7 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView24"
+            android:id="@+id/totalOrderHeader"
             android:background="@color/colorHeaderWindow"/>
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="0dp"
@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView39"
+                android:id="@+id/totalOrderHeader1"
                 android:textStyle="bold"
         />
         <TextView
@@ -40,12 +40,12 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView40"/>
+                android:id="@+id/totalOrderText1"/>
         <TextView
                 android:text="@string/detailWhence"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView27"
+                android:id="@+id/totalOrderHeader2"
                 android:paddingTop="5dp"
                 android:textStyle="bold"
         />
@@ -56,13 +56,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView28"/>
+                android:id="@+id/totalOrderText2"/>
         <TextView
                 android:text="@string/detailWhere"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView29"
+                android:id="@+id/totalOrderHeader3"
                 android:textStyle="bold"
         />
         <TextView
@@ -72,13 +72,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView30"/>
+                android:id="@+id/totalOrderText3"/>
         <TextView
                 android:text="@string/factCostOrder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView31"
+                android:id="@+id/totalOrderHeader4"
                 android:textStyle="bold"
         />
         <TextView
@@ -88,13 +88,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView32"/>
+                android:id="@+id/totalOrderText4"/>
         <TextView
                 android:text="@string/paymentMethod"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView43"
+                android:id="@+id/totalOrderHeader5"
                 android:textStyle="bold"
         />
         <TextView
@@ -104,13 +104,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView44"/>
+                android:id="@+id/totalOrderText5"/>
         <TextView
                 android:text="@string/factTravelTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView33"
+                android:id="@+id/totalOrderHeader6"
                 android:textStyle="bold"
         />
         <TextView
@@ -120,13 +120,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView34"/>
+                android:id="@+id/totalOrderText6"/>
         <TextView
                 android:text="@string/factDistance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView35"
+                android:id="@+id/totalOrderHeader7"
                 android:textStyle="bold"
         />
         <TextView
@@ -136,13 +136,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView36"/>
+                android:id="@+id/totalOrderText7"/>
         <TextView
                 android:text="@string/factTimeWaiting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView45"
+                android:id="@+id/totalOrderHeader8"
                 android:textStyle="bold"
         />
         <TextView
@@ -152,13 +152,13 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView46"/>
+                android:id="@+id/totalOrderText8"/>
         <TextView
                 android:text="@string/dateTimeStartOrder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:id="@+id/textView37"
+                android:id="@+id/totalOrderHeader9"
                 android:textStyle="bold"
         />
         <TextView
@@ -168,7 +168,7 @@
                 android:paddingTop="2dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:id="@+id/textView38"/>
+                android:id="@+id/totalOrderText9"/>
     </LinearLayout>
     <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"

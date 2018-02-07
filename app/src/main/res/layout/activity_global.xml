@@ -11,7 +11,7 @@
             android:background="?attr/colorPrimary"
             android:theme="?attr/actionBarTheme"
             android:minHeight="?attr/actionBarSize"
-            android:id="@+id/toolbar"/>
+            android:id="@+id/globalToolbar"/>
     <TextView
             android:text="@string/activOrders"
             android:textSize="30sp"
@@ -21,7 +21,7 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView24"
+            android:id="@+id/globalHeader"
             android:background="@color/colorHeaderWindow"/>
     <ScrollView android:layout_width="match_parent"
                 android:layout_height="match_parent"

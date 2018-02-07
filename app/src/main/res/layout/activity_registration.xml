@@ -15,7 +15,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:ems="10"
-                android:id="@+id/editText3"
+                android:id="@+id/regPhone"
                 android:hint="@string/phone"
                 android:drawableStart="@drawable/ic_phone_black_24dp" android:layout_weight="5.41">
         </EditText>
@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText4"
+                android:id="@+id/regFamily"
                 android:hint="@string/lastName"
                 android:layout_marginTop="5dp"
                 android:drawableStart="@drawable/ic_people_black_24dp"/>
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText5"
+                android:id="@+id/regName"
                 android:hint="@string/firstName"
                 android:layout_marginTop="5dp"
                 android:drawableStart="@drawable/ic_person_black_24dp"/>
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:ems="10"
-                android:id="@+id/editText8"
+                android:id="@+id/regBrand"
                 android:hint="@string/brandCar"
                 android:layout_marginTop="5dp"
                 android:layout_marginStart="24dp"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:ems="10"
-                android:id="@+id/editText9"
+                android:id="@+id/regColor"
                 android:hint="@string/colorCar"
                 android:layout_marginTop="5dp"
                 android:drawableStart="@drawable/ic_color_lens_black_24dp"/>
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:ems="10"
-                android:id="@+id/editText10"
+                android:id="@+id/regNumber1"
                 android:hint="@string/numberCar"
                 android:layout_marginTop="5dp"
                 android:layout_marginStart="24dp"
@@ -71,14 +71,14 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
-                android:id="@+id/editText11"
+                android:id="@+id/regAccountNumber"
                 android:hint="@string/accountNumber"
                 android:layout_marginTop="5dp"
                 android:drawableStart="@drawable/ic_credit_card_black_24dp"/>
         <TextView android:text="@string/notAccountNumber"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:id="@+id/textView1"
+                  android:id="@+id/regLink"
                   android:gravity="end"
         />
         <EditText
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/editText6"
+                android:id="@+id/regPass1"
                 android:hint="@string/password"
                 android:layout_marginTop="5dp"
                 android:drawableStart="@drawable/ic_lock_black_24dp"/>
@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/editText7"
+                android:id="@+id/regPass2"
                 android:hint="@string/confirmPass"
                 android:layout_marginTop="5dp"
                 android:drawableStart="@drawable/ic_lock_black_24dp"/>

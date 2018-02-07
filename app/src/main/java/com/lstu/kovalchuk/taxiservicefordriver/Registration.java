@@ -12,15 +12,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Registration extends AppCompatActivity {
-    private EditText etPhone = (EditText)findViewById(R.id.editText3);
-    private EditText etLastName = (EditText)findViewById(R.id.editText4);
-    private EditText etFirstName = (EditText)findViewById(R.id.editText5);
-    private EditText etBrandCar = (EditText)findViewById(R.id.editText8);
-    private EditText etColorCar = (EditText)findViewById(R.id.editText9);
-    private EditText etNumberCar = (EditText)findViewById(R.id.editText10);
-    private EditText etAccountNumber = (EditText)findViewById(R.id.editText11);
-    private EditText etPassword = (EditText)findViewById(R.id.editText6);
-    private EditText etConfirmPassword = (EditText)findViewById(R.id.editText7);
+    private EditText etPhone = (EditText)findViewById(R.id.regPhone);
+    private EditText etLastName = (EditText)findViewById(R.id.regFamily);
+    private EditText etFirstName = (EditText)findViewById(R.id.regName);
+    private EditText etBrandCar = (EditText)findViewById(R.id.regBrand);
+    private EditText etColorCar = (EditText)findViewById(R.id.regColor);
+    private EditText etNumberCar = (EditText)findViewById(R.id.regNumber1);
+    private EditText etAccountNumber = (EditText)findViewById(R.id.regAccountNumber);
+    private EditText etPassword = (EditText)findViewById(R.id.regPass1);
+    private EditText etConfirmPassword = (EditText)findViewById(R.id.regPass2);
 
 
     @Override
@@ -28,7 +28,7 @@ public class Registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        TextView yandexMapsInfo = (TextView)findViewById(R.id.textView1);
+        TextView yandexMapsInfo = (TextView)findViewById(R.id.regLink);
         if (Build.VERSION.SDK_INT >= 24)
         {
             yandexMapsInfo.setText(Html.fromHtml(getString(R.string.notAccountNumber), 1));

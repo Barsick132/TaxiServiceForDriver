@@ -12,14 +12,12 @@ import ru.yandex.yandexmapkit.utils.GeoPoint;
 
 public class Navigator extends AppCompatActivity{
 
-    private android.support.v7.widget.Toolbar toolbar;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigator);
 
-        final MapView mMapView = (MapView) findViewById(R.id.map);
+        final MapView mMapView = (MapView) findViewById(R.id.navigatorMap);
 
 // Получаем MapController
         MapController mMapController = mMapView.getMapController();
@@ -34,7 +32,7 @@ public class Navigator extends AppCompatActivity{
     }
 
     private void initToolbar() {
-        toolbar = (android.support.v7.widget.Toolbar)findViewById(R.id.toolbar);
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.navigatorToolbar);
         toolbar.setOnMenuItemClickListener(new android.support.v7.widget.Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {

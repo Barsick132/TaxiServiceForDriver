@@ -15,7 +15,7 @@ public class Order{
     public String comment;
     public int approxCost;
     public Time approxTimeToDest;
-    public Time approxDistanceToDest;
+    public float approxDistanceToDest;
     public boolean cancel;
     public boolean driverArrived;
     public boolean clientCameOut;

@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 
 public class Support extends AppCompatActivity{
-    EditText etEmail = (EditText)findViewById(R.id.editText13);
-    EditText etMessage = (EditText)findViewById(R.id.editText12);
+    private EditText etEmail = (EditText)findViewById(R.id.supportEmail);
+    private EditText etMessage = (EditText)findViewById(R.id.supportContent);
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
