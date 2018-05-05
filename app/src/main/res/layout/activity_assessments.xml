@@ -1,91 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorDefault"
-              android:padding="16dp"
->
-    <TextView android:text="Вас оценили 500 человек."
-            android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textColor="@color/colorBlack"
-              android:textSize="18sp"
-              android:layout_marginBottom="10dp"
-    />
-    <TextView android:text="@string/assessment5"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textColor="@color/colorBlack"
-              android:textSize="18sp"
-              android:paddingStart="16dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="200 человек (40%);"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textSize="18sp"
-              android:paddingStart="32dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="@string/assessment4"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textColor="@color/colorBlack"
-              android:textSize="18sp"
-              android:paddingStart="16dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="150 человек (30%);"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textSize="18sp"
-              android:paddingStart="32dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="@string/assessment3"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textColor="@color/colorBlack"
-              android:textSize="18sp"
-              android:paddingStart="16dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="25 человек (5%);"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textSize="18sp"
-              android:paddingStart="32dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="@string/assessment2"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textColor="@color/colorBlack"
-              android:textSize="18sp"
-              android:paddingStart="16dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="75 человек (15%);"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textSize="18sp"
-              android:paddingStart="32dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="@string/assessment1"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textColor="@color/colorBlack"
-              android:textSize="18sp"
-              android:paddingStart="16dp"
-              android:paddingEnd="16dp"
-    />
-    <TextView android:text="50 человек (10%)."
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textSize="18sp"
-              android:paddingStart="32dp"
-              android:paddingEnd="16dp"
-    />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefault"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Вас оценили 500 человек."
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/assessment5"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="32dp"
+        android:text="200 человек (40%);"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/assessment4"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="32dp"
+        android:text="150 человек (30%);"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/assessment3"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="32dp"
+        android:text="25 человек (5%);"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/assessment2"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="32dp"
+        android:text="75 человек (15%);"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/assessment1"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="32dp"
+        android:text="50 человек (10%)."
+        android:textSize="18sp" />
 </LinearLayout>

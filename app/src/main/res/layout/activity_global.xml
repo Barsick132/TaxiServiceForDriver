@@ -1,224 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:background="@color/colorDefault"
-              android:orientation="vertical"
->
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefault"
+    android:orientation="vertical">
+
     <android.support.v7.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:theme="?attr/actionBarTheme"
-            android:minHeight="?attr/actionBarSize"
-            android:id="@+id/globalToolbar"/>
+        android:id="@+id/globalToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
     <TextView
-            android:text="@string/activOrders"
-            android:textSize="30sp"
-            android:textColor="@color/colorAccent"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:gravity="center"
+        android:id="@+id/globalHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeaderWindow"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/activOrders"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/globalHeader"
-            android:background="@color/colorHeaderWindow"/>
-    <ScrollView android:layout_width="match_parent"
-                android:layout_height="match_parent"
-    >
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:orientation="vertical"
-                      android:background="@color/colorBlack"
-        >
-            <LinearLayout android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:orientation="vertical"
-                          android:paddingStart="16dp"
-                          android:paddingEnd="16dp"
-                          android:layout_marginBottom="1dp"
-                          android:background="@color/colorDefault"
-                          android:onClick="clickOrder"
-            >
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                >
-                    <TextView android:text="@string/whence"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="г.Липецк, ул. Стаханова, 13, п. 4"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:layout_weight="4"
-                    />
+            android:background="@color/colorBlack"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorDefault"
+                android:onClick="clickOrder"
+                android:orientation="vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/whence"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="г.Липецк, ул. Стаханова, 13, п. 4" />
                 </LinearLayout>
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                >
-                    <TextView android:text="@string/where"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="г.Липецк, ул. Московская, 30"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:layout_weight="4"
-                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/where"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="г.Липецк, ул. Московская, 30" />
                 </LinearLayout>
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                              android:paddingBottom="5dp"
-                >
-                    <TextView android:text="@string/approximateCost"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="128 руб."
-                              android:layout_width="0dp"
-                              android:layout_height="match_parent"
-                              android:textSize="28sp"
-                              android:layout_weight="4"
-                              android:layout_gravity="center"
-                    />
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:orientation="vertical"
-                          android:paddingStart="16dp"
-                          android:paddingEnd="16dp"
-                          android:layout_marginBottom="1dp"
-                          android:background="@color/colorDefault"
-            >
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                >
-                    <TextView android:text="@string/whence"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="г.Липецк, ул. Петрова, 23"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:layout_weight="4"
-                    />
-                </LinearLayout>
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                >
-                    <TextView android:text="@string/where"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="г.Липецк, ул. 60 лет СССР, 22"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:layout_weight="4"
-                    />
-                </LinearLayout>
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                              android:paddingBottom="5dp"
-                >
-                    <TextView android:text="@string/approximateCost"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="151 руб."
-                              android:layout_width="0dp"
-                              android:layout_height="match_parent"
-                              android:textSize="28sp"
-                              android:layout_weight="4"
-                              android:layout_gravity="center"
-                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/approximateCost"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:text="128 руб."
+                        android:textSize="28sp" />
                 </LinearLayout>
             </LinearLayout>
-            <LinearLayout android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:orientation="vertical"
-                          android:paddingStart="16dp"
-                          android:paddingEnd="16dp"
-                          android:layout_marginBottom="1dp"
-                          android:background="@color/colorDefault"
-            >
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                >
-                    <TextView android:text="@string/whence"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="г.Липецк, ул. Ангарская, 19"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:layout_weight="4"
-                    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorDefault"
+                android:orientation="vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/whence"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="г.Липецк, ул. Петрова, 23" />
                 </LinearLayout>
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                >
-                    <TextView android:text="@string/where"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="г.Липецк, ул. Минская, 7А"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:layout_weight="4"
-                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/where"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="г.Липецк, ул. 60 лет СССР, 22" />
                 </LinearLayout>
-                <LinearLayout android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:orientation="horizontal"
-                              android:paddingTop="5dp"
-                              android:paddingBottom="5dp"
-                >
-                    <TextView android:text="@string/approximateCost"
-                              android:layout_width="0dp"
-                              android:layout_height="wrap_content"
-                              android:textStyle="bold"
-                              android:layout_weight="1"
-                    />
-                    <TextView android:text="81 руб."
-                              android:layout_width="0dp"
-                              android:layout_height="match_parent"
-                              android:textSize="28sp"
-                              android:layout_weight="4"
-                              android:layout_gravity="center"
-                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/approximateCost"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:text="151 руб."
+                        android:textSize="28sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorDefault"
+                android:orientation="vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/whence"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="г.Липецк, ул. Ангарская, 19" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/where"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="г.Липецк, ул. Минская, 7А" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/approximateCost"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:text="81 руб."
+                        android:textSize="28sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

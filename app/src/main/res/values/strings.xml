@@ -8,7 +8,7 @@
     //Main
     <string name="phone">Телефон</string>
     <string name="password">Пароль</string>
-    <string name="signIn">Войти</string>
+    <string name="signIn">Вход</string>
     <string name="registration">Регистрация</string>
 
     //Registration
@@ -310,4 +310,11 @@
         «Северо-Западный Картографический Центр» (<a href="http://automaps.ru/">http://automaps.ru/</a>, г. Санкт-Петербург).</p>
         ]]>
     </string>
+    <string name="No">Нет</string>
+    <string name="Yes">Да</string>
+    <string name="AlreadyHaveAccount">У вас уже есть аккаунт?</string>
+    <string name="FullName">Фамилия и Имя</string>
+    <string name="ExampleNumberCar">Например: С065МК/24</string>
+    <string name="ExampleBrandCar">Например: Peugeot 406</string>
+    <string name="ExampleYandexMoneyAcc">Например: 153482746583726</string>
 </resources>

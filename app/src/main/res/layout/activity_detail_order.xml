@@ -1,179 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorDefault"
->
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefault"
+    android:orientation="vertical">
 
     <TextView
-            android:text="@string/detailOrder"
-            android:textSize="30sp"
-            android:textColor="@color/colorAccent"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:gravity="center"
+        android:id="@+id/detailOrderHeder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeaderWindow"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/detailOrder"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/detailOrderHeder1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/detailOrderHeder"
-            android:background="@color/colorHeaderWindow"/>
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="0dp"
-                  android:orientation="vertical"
-                  android:paddingTop="8dp"
-                  android:paddingStart="16dp"
-                  android:paddingEnd="16dp"
-                  android:paddingBottom="8dp"
-                  android:layout_weight="1"
-    >
+            android:paddingTop="5dp"
+            android:text="@string/fullNameClient"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/fullNameClient"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:id="@+id/detailOrderHeder1"
-                android:textStyle="bold"
-        />
+            android:id="@+id/detailOrderText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="Боткин Валерий Петрович" />
+
         <TextView
-                android:text="Боткин Валерий Петрович"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText1"/>
+            android:id="@+id/detailOrderHeder2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/detailWhence"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/detailWhence"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/detailOrderHeder2"
-                android:paddingTop="5dp"
-                android:textStyle="bold"
-        />
+            android:id="@+id/detailOrderText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="г. Липецк, ул. Стаханова, 13, п. 4" />
+
         <TextView
-                android:text="г. Липецк, ул. Стаханова, 13, п. 4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText2"/>
+            android:id="@+id/detailOrderHeder3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/detailWhere"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/detailWhere"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:id="@+id/detailOrderHeder3"
-                android:textStyle="bold"
-        />
+            android:id="@+id/detailOrderText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="г. Липецк, ул. Московская, 30" />
+
         <TextView
-                android:text="г. Липецк, ул. Московская, 30"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText3"/>
+            android:id="@+id/detailOrderHeder4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/approximateCost"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/approximateCost"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:id="@+id/detailOrderHeder4"
-                android:textStyle="bold"
-        />
+            android:id="@+id/detailOrderText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="128 руб." />
+
         <TextView
-                android:text="128 руб."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText4"/>
+            android:id="@+id/detailOrderHeder5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/paymentMethod"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/paymentMethod"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:id="@+id/detailOrderHeder5"
-                android:textStyle="bold"
-        />
+            android:id="@+id/detailOrderText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="Оплата наличными" />
+
         <TextView
-                android:text="Оплата наличными"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText5"/>
+            android:id="@+id/detailOrderHeder6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/commentClient"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/commentClient"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:id="@+id/detailOrderHeder6"
-                android:textStyle="bold"
-        />
+            android:id="@+id/detailOrderText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="Пооедет девушка." />
+
         <TextView
-                android:text="Пооедет девушка."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText6"/>
+            android:id="@+id/detailOrderHeder7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/approximateTravelTime"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/approximateTravelTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:id="@+id/detailOrderHeder7"
-                android:textStyle="bold"
-        />
+            android:id="@+id/detailOrderText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="8 мин." />
+
         <TextView
-                android:text="8 мин."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText7"/>
+            android:id="@+id/detailOrderHeder8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/approximateDistance"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/approximateDistance"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:id="@+id/detailOrderHeder8"
-                android:textStyle="bold"
-        />
+            android:id="@+id/detailOrderText8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="2.5 км" />
+
         <TextView
-                android:text="2.5 км"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText8"/>
+            android:id="@+id/detailOrderHeder9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/timeWaiting"
+            android:textStyle="bold" />
+
         <TextView
-                android:text="@string/timeWaiting"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:id="@+id/detailOrderHeder9"
-                android:textStyle="bold"
-        />
-        <TextView
-                android:text="3 мин."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:id="@+id/detailOrderText9"/>
+            android:id="@+id/detailOrderText9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="2dp"
+            android:text="3 мин." />
     </LinearLayout>
-    <Button android:text="@string/startOrder"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openNavigator"
-    />
+
+    <Button
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openNavigator"
+        android:text="@string/startOrder" />
 </LinearLayout>

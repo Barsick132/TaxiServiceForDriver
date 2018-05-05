@@ -1,161 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:padding="16dp"
-              android:layout_weight="1"
-              android:background="@color/colorDefault"
->
-    <ScrollView android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-    >
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:orientation="vertical"
-        >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
             <TextView
-                    android:text="@string/firstName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderName"/>
+                android:id="@+id/profileHeaderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/firstName" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/profileName"
-                    android:hint="@string/enterYourFirstName"
-                    android:text="Антон"/>
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourFirstName"
+                android:inputType="textPersonName"
+                android:text="Антон" />
+
             <TextView
-                    android:text="@string/lastName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderFamily"/>
+                android:id="@+id/profileHeaderFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lastName" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/profileFamily"
-                    android:hint="@string/enterYourLastName"
-                    android:text="Ковальчук"/>
+                android:id="@+id/profileFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourLastName"
+                android:inputType="textPersonName"
+                android:text="Ковальчук" />
+
             <TextView
-                    android:text="@string/patronymic"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderPatronymic"/>
+                android:id="@+id/profileHeaderPatronymic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patronymic" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/profilePatronymic"
-                    android:hint="@string/enterYourPatronymic"
-                    android:text="Дмитриевич"/>
+                android:id="@+id/profilePatronymic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourPatronymic"
+                android:inputType="textPersonName"
+                android:text="Дмитриевич" />
+
             <TextView
-                    android:text="@string/phone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderPhone"/>
+                android:id="@+id/profileHeaderPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="phone"
-                    android:ems="10"
-                    android:id="@+id/profilePhone"
-                    android:hint="@string/enterYourPhone"
-                    android:text="+7(999)888&#8211;7777"
-            />
+                android:id="@+id/profilePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourPhone"
+                android:inputType="phone"
+                android:text="+7(999)888&#8211;7777" />
+
             <TextView
-                    android:text="@string/brandCar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderBrand"/>
+                android:id="@+id/profileHeaderBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/brandCar" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:ems="10"
-                    android:id="@+id/profileBrand"
-                    android:hint="@string/enterYourBrandCar"
-                    android:text="Renault Logan"/>
+                android:id="@+id/profileBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourBrandCar"
+                android:inputType="text"
+                android:text="Renault Logan" />
+
             <TextView
-                    android:text="@string/colorCar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderColor"/>
+                android:id="@+id/profileHeaderColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/colorCar" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:ems="10"
-                    android:id="@+id/profileColor"
-                    android:hint="@string/enterYourColorCar"
-                    android:text="Белый"/>
+                android:id="@+id/profileColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourColorCar"
+                android:inputType="text"
+                android:text="Белый" />
+
             <TextView
-                    android:text="@string/numberCar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderNumber1"/>
+                android:id="@+id/profileHeaderNumber1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/numberCar" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:ems="10"
-                    android:id="@+id/profileNumber1"
-                    android:hint="@string/enterYourNumberCar"
-                    android:text="М304АК/24"/>
+                android:id="@+id/profileNumber1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourNumberCar"
+                android:inputType="text"
+                android:text="М304АК/24" />
+
             <TextView
-                    android:text="@string/accountNumber"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderAccountNumber"/>
+                android:id="@+id/profileHeaderAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accountNumber" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/profileAccountNumber"
-                    android:hint="@string/enterYourAccountNumber"
-                    android:text="43000324354366346341"/>
+                android:id="@+id/profileAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourAccountNumber"
+                android:inputType="number"
+                android:text="43000324354366346341" />
+
             <TextView
-                    android:text="@string/password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderPass1"/>
+                android:id="@+id/profileHeaderPass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:ems="10"
-                    android:id="@+id/profilePass1"
-                    android:hint="@string/enterYourNewPass"
-            />
+                android:id="@+id/profilePass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourNewPass"
+                android:inputType="textPassword" />
+
             <TextView
-                    android:text="@string/confirmPass"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/profileHeaderPass2"/>
+                android:id="@+id/profileHeaderPass2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmPass" />
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:ems="10"
-                    android:id="@+id/profilePass2"
-                    android:hint="@string/enterYourNewConfirmPass"
-            />
+                android:id="@+id/profilePass2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enterYourNewConfirmPass"
+                android:inputType="textPassword" />
         </LinearLayout>
     </ScrollView>
 
     <Button
-            android:layout_gravity="bottom"
-            android:text="@string/save"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2"
-            android:onClick="saveDataProfile"
-    />
+        android:id="@+id/button2"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="saveDataProfile"
+        android:text="@string/save" />
 </LinearLayout>

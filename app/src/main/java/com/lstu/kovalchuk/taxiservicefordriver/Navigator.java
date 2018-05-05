@@ -6,29 +6,46 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
-import ru.yandex.yandexmapkit.MapController;
-import ru.yandex.yandexmapkit.MapView;
-import ru.yandex.yandexmapkit.utils.GeoPoint;
+
+import com.yandex.mapkit.Animation;
+import com.yandex.mapkit.MapKitFactory;
+import com.yandex.mapkit.geometry.Point;
+import com.yandex.mapkit.map.CameraPosition;
+import com.yandex.mapkit.mapview.MapView;
 
 public class Navigator extends AppCompatActivity{
+
+    private MapView mapview;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        MapKitFactory.setApiKey("ce22acd0-3f1a-4e4b-bb04-293ac4af654a");
+        MapKitFactory.initialize(this);
+
         setContentView(R.layout.activity_navigator);
-
-        final MapView mMapView = (MapView) findViewById(R.id.navigatorMap);
-
-// Получаем MapController
-        MapController mMapController = mMapView.getMapController();
-
-        mMapController.setZoomCurrent(17);
-// Перемещаем карту на заданные координаты
-        mMapController.setPositionAnimationTo(new GeoPoint(52.583556, 39.476184));
-
-        mMapView.showZoomButtons(true);
+        mapview = (MapView)findViewById(R.id.navMap);
+        mapview.getMap().move(
+                new CameraPosition(new Point(55.751574, 37.573856), 11.0f, 0.0f, 0.0f),
+                new Animation(Animation.Type.SMOOTH, 0),
+                null);
 
         initToolbar();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mapview.onStop();
+        MapKitFactory.getInstance().onStop();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mapview.onStart();
+        MapKitFactory.getInstance().onStart();
     }
 
     private void initToolbar() {

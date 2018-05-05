@@ -1,109 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorDefault"
->
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:padding="16dp"
-                  android:orientation="vertical"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefault">
 
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="phone"
-                android:ems="10"
-                android:id="@+id/regPhone"
-                android:hint="@string/phone"
-                android:drawableStart="@drawable/ic_phone_black_24dp" android:layout_weight="5.41">
-        </EditText>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/regFamily"
-                android:hint="@string/lastName"
-                android:layout_marginTop="5dp"
-                android:drawableStart="@drawable/ic_people_black_24dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/regName"
-                android:hint="@string/firstName"
-                android:layout_marginTop="5dp"
-                android:drawableStart="@drawable/ic_person_black_24dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:ems="10"
-                android:id="@+id/regBrand"
-                android:hint="@string/brandCar"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="24dp"
-        />
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:ems="10"
-                android:id="@+id/regColor"
-                android:hint="@string/colorCar"
-                android:layout_marginTop="5dp"
-                android:drawableStart="@drawable/ic_color_lens_black_24dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:ems="10"
-                android:id="@+id/regNumber1"
-                android:hint="@string/numberCar"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="24dp"
-        />
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/regAccountNumber"
-                android:hint="@string/accountNumber"
-                android:layout_marginTop="5dp"
-                android:drawableStart="@drawable/ic_credit_card_black_24dp"/>
-        <TextView android:text="@string/notAccountNumber"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:id="@+id/regLink"
-                  android:gravity="end"
-        />
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/regPass1"
-                android:hint="@string/password"
-                android:layout_marginTop="5dp"
-                android:drawableStart="@drawable/ic_lock_black_24dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/regPass2"
-                android:hint="@string/confirmPass"
-                android:layout_marginTop="5dp"
-                android:drawableStart="@drawable/ic_lock_black_24dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/regTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/regFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:ems="10"
+            android:hint="@string/FullName"
+            android:inputType="textPersonName"
+            app:met_floatingLabel="highlight"
+            app:met_helperTextAlwaysShown="true"
+            app:met_primaryColor="@color/colorAccent" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/regBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:ems="10"
+            android:hint="@string/brandCar"
+            android:inputType="text"
+            app:met_floatingLabel="highlight"
+            app:met_helperText="@string/ExampleBrandCar"
+            app:met_helperTextAlwaysShown="true"
+            app:met_primaryColor="@color/colorAccent" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/regColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_color_lens_black_24dp"
+            android:ems="10"
+            android:hint="@string/colorCar"
+            android:inputType="textPersonName"
+            app:met_floatingLabel="highlight"
+            app:met_helperTextAlwaysShown="true"
+            app:met_primaryColor="@color/colorAccent" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/regNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:ems="10"
+            android:hint="@string/numberCar"
+            android:inputType="text"
+            app:met_floatingLabel="highlight"
+            app:met_helperText="@string/ExampleNumberCar"
+            app:met_helperTextAlwaysShown="true"
+            app:met_primaryColor="@color/colorAccent" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/regAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_credit_card_black_24dp"
+            android:ems="10"
+            android:hint="@string/accountNumber"
+            android:inputType="number"
+            app:met_floatingLabel="highlight"
+            app:met_helperText="@string/ExampleYandexMoneyAcc"
+            app:met_helperTextAlwaysShown="true"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_minCharacters="15"
+            app:met_maxCharacters="15"/>
+
+        <TextView
+            android:id="@+id/regLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/notAccountNumber" />
+
         <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/toRegister"
-                android:layout_marginTop="5dp"
-                android:onClick="toRegister"/>
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:onClick="toRegister"
+            android:text="@string/toRegister" />
     </LinearLayout>
 </ScrollView>
