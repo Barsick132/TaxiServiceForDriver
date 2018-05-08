@@ -5,18 +5,6 @@
     android:background="@color/colorDefault"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/detailOrderHeder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorHeaderWindow"
-        android:gravity="center"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:text="@string/detailOrder"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

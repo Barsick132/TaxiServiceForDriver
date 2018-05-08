@@ -57,7 +57,6 @@
             android:id="@+id/menuAbout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginBottom="1dp"
             android:layout_marginTop="1dp"
             android:background="@color/colorDefault"
             android:gravity="center_vertical"
@@ -65,6 +64,21 @@
             android:paddingEnd="16dp"
             android:paddingStart="16dp"
             android:text="@string/aboutProgram"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/menuSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorDefault"
+            android:gravity="center_vertical"
+            android:onClick="signOut"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/signOut"
             android:textColor="@color/colorBlack"
             android:textSize="18sp" />
     </LinearLayout>

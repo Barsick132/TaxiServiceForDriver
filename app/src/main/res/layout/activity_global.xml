@@ -7,24 +7,13 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
+        app:title="Доступные заказы"
         android:id="@+id/globalToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
-
-    <TextView
-        android:id="@+id/globalHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorHeaderWindow"
-        android:gravity="center"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:text="@string/activOrders"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp" />
 
     <ScrollView
         android:layout_width="match_parent"

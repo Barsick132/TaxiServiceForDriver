@@ -11,31 +11,31 @@
                  android:roundIcon="@mipmap/ic_launcher_round"
                  android:supportsRtl="true"
                  android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Registration">
+        <activity android:name=".Registration" android:label="Регистрация">
         </activity>
-        <activity android:name=".Global">
+        <activity android:name=".Global" android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".Menu">
+        <activity android:name=".Menu" android:label="Меню">
         </activity>
-        <activity android:name=".About">
+        <activity android:name=".About" android:label="О программе">
         </activity>
-        <activity android:name=".Support">
+        <activity android:name=".Support" android:label="Служба поддержки">
         </activity>
-        <activity android:name=".Profile">
+        <activity android:name=".Profile" android:label="Профиль">
         </activity>
-        <activity android:name=".Assessments">
+        <activity android:name=".Assessments" android:label="Оценки клиентов">
         </activity>
-        <activity android:name=".DetailOrder">
+        <activity android:name=".DetailOrder" android:label="Подробности заказа">
         </activity>
-        <activity android:name=".Navigator">
+        <activity android:name=".Navigator" android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".TotalOrder">
+        <activity android:name=".TotalOrder" android:label="Итоги по заказу">
         </activity>
     </application>
 </manifest>

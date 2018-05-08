@@ -317,4 +317,5 @@
     <string name="ExampleNumberCar">Например: С065МК/24</string>
     <string name="ExampleBrandCar">Например: Peugeot 406</string>
     <string name="ExampleYandexMoneyAcc">Например: 153482746583726</string>
+    <string name="signOut">Выход</string>
 </resources>

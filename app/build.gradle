@@ -24,12 +24,14 @@ android {
 }
 
 dependencies {
+    implementation 'com.yandex.money.api:yandex-money-sdk-android:4.1.0'
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
     implementation 'com.yandex.android:mapkit:3.0.0'
     // Библиотеки Firebase
     implementation 'com.firebaseui:firebase-ui-auth:3.3.1'
     implementation 'com.google.firebase:firebase-core:15.0.2'
     implementation 'com.google.firebase:firebase-auth:15.1.0'
+    implementation 'com.google.firebase:firebase-firestore:16.0.0'
     // Библиотеки студии
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'

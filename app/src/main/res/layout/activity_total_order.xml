@@ -4,18 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/totalOrderHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorHeaderWindow"
-        android:gravity="center"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:text="@string/headerTotalOrder"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
