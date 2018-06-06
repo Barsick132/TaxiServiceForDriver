@@ -15,38 +15,59 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 
-    <com.yandex.mapkit.mapview.MapView
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/navMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
-    <!--<ru.yandex.yandexmapkit.MapView
-            android:id="@+id/navigatorMap"
-            android:layout_height="0dp"
-            android:layout_width="match_parent"
-            android:apiKey="WT1goYZNqbPdNBMruaSCPPmR3er4QXd-X9XVg6MR15ATij2rmtpUY-SCHS7gB1z-XHSNb4PlE1WpuljfF9Q5~Kv8JLeuJFp6fQxoLRiB37o="
-            android:layout_weight="1"
-    />-->
+        android:layout_weight="1"
+        tools:context="com.lstu.kovalchuk.taxiservicefordriver.Navigator" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/navBtnCancel"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.89"
+            android:fontFamily="@font/open_sans_condensed_bold"
             android:onClick="closeOrder"
             android:text="@string/annulment" />
 
         <Button
+            android:id="@+id/navBtnCall"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/open_sans_condensed_bold"
             android:onClick="openPhoneKeyboard"
             android:text="@string/calling" />
+
+        <Button
+            android:id="@+id/navBtnDriverArrived"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:onClick="startWaitingClient"
+            android:text="@string/Waiting" />
+
+        <Button
+            android:id="@+id/navBtnGo"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:onClick="startOrder"
+            android:text="@string/Go" />
     </LinearLayout>
 
     <Button

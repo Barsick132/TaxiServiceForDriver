@@ -10,6 +10,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resValue "string", "google_maps_key",
+                (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
+        resValue "string", "google_maps_webkey",
+                (project.findProperty("GOOGLE_MAPS_API_WEBKEY") ?: "")
     }
     buildTypes {
         release {
@@ -24,9 +28,12 @@ android {
 }
 
 dependencies {
-    implementation 'com.yandex.money.api:yandex-money-sdk-android:4.1.0'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
-    implementation 'com.yandex.android:mapkit:3.0.0'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
     // Библиотеки Firebase
     implementation 'com.firebaseui:firebase-ui-auth:3.3.1'
     implementation 'com.google.firebase:firebase-core:15.0.2'

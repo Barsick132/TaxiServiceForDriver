@@ -215,12 +215,12 @@ public final class Registration extends AppCompatActivity {
                             Log.d(TAG, "No such document");
 
                             // Create a new user with a first and last name
-                            Map<String, Object> driver = new HashMap<>();
-                            driver.put("FullName", metFullName.getText().toString());
-                            driver.put("BrandCar", metBrandCar.getText().toString());
-                            driver.put("ColorCar", metColorCar.getText().toString());
-                            driver.put("NumberCar", metNumberCar.getText().toString());
-                            driver.put("AccountNumber", metAccountNumber.getText().toString());
+                            Driver driver = new Driver(user.getPhoneNumber(),
+                                    metFullName.getText().toString(),
+                                    metBrandCar.getText().toString(),
+                                    metColorCar.getText().toString(),
+                                    metNumberCar.getText().toString(),
+                                    metAccountNumber.getText().toString());
 
                             // Add a new document with a generated ID
                             db.collection("drivers").document(user.getUid())

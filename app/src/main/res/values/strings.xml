@@ -54,7 +54,7 @@
     <string name="approximateDistance">Приблизительное расстояние</string>
     <string name="timeWaiting">Приблизительное время поездки до клиента</string>
     <string name="detailOrder">Подробности заказа</string>
-    <string name="fullNameClient">ФИО клиента</string>
+    <string name="fullNameClient">Имя клиента</string>
     <string name="startOrder">Начать выполнение</string>
     <string name="commentClient">Комментарий клиента</string>
     <string name="paymentMethod">Способ оплаты</string>
@@ -70,7 +70,7 @@
     <string name="factCostOrder">Фактическая цена заказа</string>
     <string name="factTravelTime">Время выполнения заказа</string>
     <string name="factDistance">Фактическое расстояние</string>
-    <string name="dateTimeStartOrder">Дата и время начала выполнения заказа</string>
+    <string name="dateTimeStartOrder">Дата и время начала заказа</string>
 
     //Profile
     <string name="patronymic">Отчество</string>
@@ -318,4 +318,9 @@
     <string name="ExampleBrandCar">Например: Peugeot 406</string>
     <string name="ExampleYandexMoneyAcc">Например: 153482746583726</string>
     <string name="signOut">Выход</string>
+    <string name="Waiting">Ожидаю</string>
+    <string name="errorGetting">Error getting</string>
+    <string name="Go">Поехали</string>
+    <string name="dateTimeEndOrder">Дата и время окончания заказа</string>
+    <string name="OrdersIsEmpty">Заказы пока что отсутствуют</string>
 </resources>

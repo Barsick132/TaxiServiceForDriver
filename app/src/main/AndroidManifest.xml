@@ -1,41 +1,69 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-          package="com.lstu.kovalchuk.taxiservicefordriver"
->
+    package="com.lstu.kovalchuk.taxiservicefordriver">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <application android:allowBackup="true"
-                 android:label="@string/app_name"
-                 android:icon="@mipmap/ic_launcher"
-                 android:roundIcon="@mipmap/ic_launcher_round"
-                 android:supportsRtl="true"
-                 android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_tsfd"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_tsfd"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registration" android:label="Регистрация">
-        </activity>
-        <activity android:name=".Global" android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".Menu" android:label="Меню">
-        </activity>
-        <activity android:name=".About" android:label="О программе">
-        </activity>
-        <activity android:name=".Support" android:label="Служба поддержки">
-        </activity>
-        <activity android:name=".Profile" android:label="Профиль">
-        </activity>
-        <activity android:name=".Assessments" android:label="Оценки клиентов">
-        </activity>
-        <activity android:name=".DetailOrder" android:label="Подробности заказа">
-        </activity>
-        <activity android:name=".Navigator" android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".TotalOrder" android:label="Итоги по заказу">
-        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="Регистрация" />
+        <activity
+            android:name=".Global"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Menu"
+            android:label="Меню" />
+        <activity
+            android:name=".About"
+            android:label="О программе" />
+        <activity
+            android:name=".Support"
+            android:label="Служба поддержки" />
+        <activity
+            android:name=".Profile"
+            android:label="Профиль" />
+        <activity
+            android:name=".Assessments"
+            android:label="Оценки клиентов" />
+        <activity
+            android:name=".DetailOrder"
+            android:label="Подробности заказа" />
+        <activity
+            android:name=".DetailOrderView"
+            android:label="Подробности заказа" />
+        <activity
+            android:name=".Navigator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TotalOrder"
+            android:label="Итоги по заказу" />
     </application>
 </manifest>

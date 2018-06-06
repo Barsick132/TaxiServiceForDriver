@@ -1,177 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/totalOrderRefresh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".TotalOrder">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:paddingBottom="8dp"
-        android:paddingEnd="16dp"
-        android:paddingStart="16dp"
-        android:paddingTop="8dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/totalOrderHeader1"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/fullNameClient"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalOrderClientFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/detailWhence"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalOrderWhence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/detailWhere"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalOrderWhere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/factCostOrder"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalOrderCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/paymentMethod"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalOrderCashlessPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/factTravelTime"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalOrderTimeComplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/dateTimeStartOrder"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalOrderDTstart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/dateTimeEndOrder"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalOrderDTend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="2dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/totalOrderBtnComplete"
+            style="@style/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/fullNameClient"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="Боткин Валерий Петрович" />
-
-        <TextView
-            android:id="@+id/totalOrderHeader2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/detailWhence"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="г. Липецк, ул. Стаханова, 13, п. 4" />
-
-        <TextView
-            android:id="@+id/totalOrderHeader3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/detailWhere"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="г. Липецк, ул. Московская, 30" />
-
-        <TextView
-            android:id="@+id/totalOrderHeader4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/factCostOrder"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="130 руб." />
-
-        <TextView
-            android:id="@+id/totalOrderHeader5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/paymentMethod"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="Оплата наличными" />
-
-        <TextView
-            android:id="@+id/totalOrderHeader6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/factTravelTime"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="9 мин." />
-
-        <TextView
-            android:id="@+id/totalOrderHeader7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/factDistance"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="2.4 км" />
-
-        <TextView
-            android:id="@+id/totalOrderHeader8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/factTimeWaiting"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="1.5 мин." />
-
-        <TextView
-            android:id="@+id/totalOrderHeader9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/dateTimeStartOrder"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/totalOrderText9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="0dp"
-            android:paddingStart="20dp"
-            android:paddingTop="2dp"
-            android:text="23.11.2017 18:43:21" />
+            android:onClick="goListOrders"
+            android:text="@string/openListOrders" />
     </LinearLayout>
-
-    <Button
-        style="@style/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="goListOrders"
-        android:text="@string/openListOrders" />
-</LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -9,16 +9,15 @@
     <ImageView
         android:id="@+id/mainImage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:contentDescription="@string/logo"
-        android:src="@drawable/ic_android_black_24dp" />
+        android:src="@drawable/ic_logo_tsfd" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:orientation="vertical">
 
         <!--<EditText
