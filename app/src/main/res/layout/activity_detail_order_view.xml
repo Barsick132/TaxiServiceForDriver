@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefault"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/fullNameClient"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/detailWhence"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovWhence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/detailWhere"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovWhere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/approximateCost"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovApproxCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/paymentMethod"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovCashlessPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/commentClient"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/approximateTravelTime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovApproxTimeToDest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/approximateDistance"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovApproxDistanceToDest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/timeWaiting"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dovWaitingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
