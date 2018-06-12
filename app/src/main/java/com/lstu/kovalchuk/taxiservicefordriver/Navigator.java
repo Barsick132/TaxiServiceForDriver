@@ -9,10 +9,8 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
-import android.location.LocationListener;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -26,7 +24,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationAvailability;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
@@ -34,7 +31,6 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.LocationSource;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptor;
@@ -106,6 +102,7 @@ public class Navigator extends AppCompatActivity implements OnMapReadyCallback {
     private Client client;
     private BitmapDescriptor iconWhence, iconWhere;
     private boolean isClientComeOut;
+    private boolean routeDrawing;
 
     private LocationCallback mLocationCallback;
     private LocationRequest mLocationRequest;
@@ -238,9 +235,12 @@ public class Navigator extends AppCompatActivity implements OnMapReadyCallback {
                     order = documentSnapshot.toObject(Order.class);
                     if (order != null) {
                         if (!order.isDriverArrived()) {
-                            String position = currentLocation.getLatitude() + "," + currentLocation.getLongitude();
-                            String destination = order.getWhenceGeoPoint().getLatitude() + "," + order.getWhenceGeoPoint().getLongitude();
-                            routePrint(position, destination);
+                            if(currentLocation != null) {
+                                String position = currentLocation.getLatitude() + "," + currentLocation.getLongitude();
+                                String destination = order.getWhenceGeoPoint().getLatitude() + "," + order.getWhenceGeoPoint().getLongitude();
+                                routePrint(position, destination);
+                                routeDrawing = true;
+                            }
                         } else {
                             btnCancel.setVisibility(View.GONE);
                             btnArrived.setVisibility(View.GONE);
@@ -500,6 +500,14 @@ public class Navigator extends AppCompatActivity implements OnMapReadyCallback {
                         // Если удалось определить местоположение
                         Log.d(TAG, "onComplete: местоположение определено!");
                         currentLocation = (Location) task.getResult();
+
+                        if(!routeDrawing && order!=null && !order.isDriverArrived())
+                        {
+                            String position = currentLocation.getLatitude() + "," + currentLocation.getLongitude();
+                            String destination = order.getWhenceGeoPoint().getLatitude() + "," + order.getWhenceGeoPoint().getLongitude();
+                            routePrint(position, destination);
+                            routeDrawing = true;
+                        }
 
                         // Меняем местоположение камеры
                         moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), DEFAULT_ZOOM);

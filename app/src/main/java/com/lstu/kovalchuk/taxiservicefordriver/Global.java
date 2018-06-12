@@ -23,9 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import java.io.Serializable;
 import java.text.MessageFormat;
-import java.util.Date;
 
 public class Global extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
