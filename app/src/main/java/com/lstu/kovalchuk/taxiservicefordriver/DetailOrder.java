@@ -163,9 +163,11 @@ public class DetailOrder extends AppCompatActivity {
             @Override
             public void onFailure(Request request, IOException e) {
                 try {
-                    Toast.makeText(DetailOrder.this, "Проверьте соединение с сетью", Toast.LENGTH_SHORT).show();
+                    runOnUiThread(() -> {
+                        Toast.makeText(DetailOrder.this, "Проверьте соединение с сетью", Toast.LENGTH_SHORT).show();
+                        tvWaitingTime.setText(R.string.errorGetting);
+                    });
                     Log.e(TAG, "onFailure: не удалось получить маршруты в формате json" + e.getMessage());
-                    tvWaitingTime.setText(R.string.errorGetting);
                 } catch (Exception ex) {
                     Log.e(TAG, "onFailure: " + e.getMessage());
                 }
@@ -197,13 +199,15 @@ public class DetailOrder extends AppCompatActivity {
                             } else {
                                 strApproxTime = MessageFormat.format("{0} ч. {1} мин.", hours.intValue(), minutes.intValue());
                             }
-                            tvWaitingTime.setText(strApproxTime);
+                            runOnUiThread(() -> tvWaitingTime.setText(strApproxTime));
                         });
                     }
                 } catch (Exception ex) {
                     Log.d(TAG, "onResponse: ошибка при получении маршрута в формате json");
-                    Toast.makeText(DetailOrder.this, "Проверьте соединение с сетью", Toast.LENGTH_SHORT).show();
-                    tvWaitingTime.setText(R.string.errorGetting);
+                    runOnUiThread(() -> {
+                        Toast.makeText(DetailOrder.this, "Проверьте соединение с сетью", Toast.LENGTH_SHORT).show();
+                        tvWaitingTime.setText(R.string.errorGetting);
+                    });
                 }
             }
         });
