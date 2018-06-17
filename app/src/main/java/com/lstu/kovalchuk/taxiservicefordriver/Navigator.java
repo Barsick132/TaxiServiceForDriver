@@ -503,6 +503,12 @@ public class Navigator extends AppCompatActivity implements OnMapReadyCallback {
                         Log.d(TAG, "onComplete: местоположение определено!");
                         currentLocation = (Location) task.getResult();
 
+                        if(currentLocation==null){
+                            Log.d(TAG, "getDeviceLocation: местоположение НЕ определено");
+                            Toast.makeText(Navigator.this, "Не удалось определить текущее местоположение", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
                         if(!routeDrawing && order!=null && !order.isDriverArrived())
                         {
                             String position = currentLocation.getLatitude() + "," + currentLocation.getLongitude();
